@@ -5,7 +5,7 @@ resource "aws_vpc" "eks-vpc" {
   tags = merge(
     local.tags,
     {
-      name = "comunidadedevops-vpc"
+      Name = "${var.project_name}-vpc",
     }
   )
 }
